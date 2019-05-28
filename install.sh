@@ -3,6 +3,7 @@ yum -y install gcc gcc-c++ openssl openssl-devel libaio libaio-devel  ncurses  n
 yum -y install numactl
 mysql_file="mysql-8.0.16-linux-glibc2.12-x86_64"
 if [ ! -d $mysql_file ];then
+xz -d ${mysql_file}.tar.xz
 tar -xvf ${mysql_file}.tar
 fi
 
