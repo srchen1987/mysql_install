@@ -7,7 +7,8 @@ https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.16-linux-glibc2.12-x86_6
 也可通过 wget https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.16-linux-glibc2.12-x86_64.tar.xz
 
 将安装包解压到本脚本同级目录
-xz -d mysql-8.0.16-linux-glibc2.12-x86_64.tar.xz
+
+
 切换root 用户 执行 source install.sh 即可
 
 
