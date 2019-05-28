@@ -1,5 +1,6 @@
 
-# mysql_install
+# mysql_install 
+本脚本的作用是一键安装mysql 
 本脚本在centos7 下运行 mysql安装包为glibc版
 考虑下载过慢的情况 mysql安装包请自行下载
 https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.16-linux-glibc2.12-x86_64.tar.xz
