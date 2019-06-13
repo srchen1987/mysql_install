@@ -66,7 +66,7 @@ fi
 
 cp my.cnf /etc/my.cnf
 cp  /usr/local/mysql8/support-files/mysql.server  /etc/init.d/mysqld
-sed -i "s#basedir=#basedir=$MYSQL8#g" /etc/init.d/mysqld
+sed -i "s#basedir=\$#basedir=$MYSQL8#g" /etc/init.d/mysqld
 
 echo -n  "do you want to star mysql service now ? y or n ->"
 read  input
