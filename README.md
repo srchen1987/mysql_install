@@ -23,3 +23,12 @@ https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.16-linux-glibc2.12-x86_6
 my_template.cnf为模板文件 请根据实际情况进行调整
 
 install.sh 中 MYSQL8="/usr/local/mysql8" 是安装的位置 这个可以自定义
+
+
+补充:
+
+mysql -uroot -p
+
+mysql: error while loading shared libraries: libtinfo.so.5: cannot open shared object file: No such file or directory
+
+出现这种错误需要通过软连接库来解决 ln -s /usr/lib64/libtinfo.so.6.2 /usr/lib64/libtinfo.so.5 
