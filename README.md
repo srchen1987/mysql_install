@@ -32,3 +32,5 @@ mysql -uroot -p
 mysql: error while loading shared libraries: libtinfo.so.5: cannot open shared object file: No such file or directory
 
 出现这种错误需要通过软连接库来解决 ln -s /usr/lib64/libtinfo.so.6.2 /usr/lib64/libtinfo.so.5 
+
+更改当前用户密码 alter user user() identified by "srchen1987";
