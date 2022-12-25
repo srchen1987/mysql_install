@@ -8,6 +8,21 @@ symbolic-links=0
 # customize your systemd unit file for mariadb according to the
 # instructions in http://fedoraproject.org/wiki/Systemd
 
+log_bin=MYSQL8/data/mysql-bin
+binlog_format=ROW
+
+#
+#
+# # binlog
+expire_logs_days=15
+#
+# #slow log
+slow_query_log=1
+slow_query_log_file=MYSQL8/data/slow.log
+long_query_time=0.3
+
+
+
 [mysqld_safe]
 log-error=MYSQL8/log/mysql_err.log
 pid-file=MYSQL8/log/mysql8.pid
