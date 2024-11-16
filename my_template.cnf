@@ -14,7 +14,8 @@ binlog_format=ROW
 #
 #
 # # binlog
-expire_logs_days=15
+#expire_logs_days=15
+binlog_expire_logs_seconds=259200
 #
 # #slow log
 slow_query_log=1
